@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="HudScene" extends="Scene">
+  <script type="text/brightscript" uri="pkg:/components/HudScene.brs" />
+
+  <children>
+    <Poster
+      id="hudImage"
+      width="1280"
+      height="720"
+      loadDisplayMode="scaleToFit"
+      translation="[0,0]" />
+
+    <Rectangle
+      id="topBar"
+      width="1280"
+      height="46"
+      color="0x000000AA"
+      translation="[0,0]" />
+
+    <Label
+      id="statusLabel"
+      translation="[20,10]"
+      width="1240"
+      height="30"
+      font="font:SmallSystemFont"
+      color="0xFFFFFFFF"
+      text="VTX Roku HUD" />
+
+    <Rectangle
+      id="configPanel"
+      width="900"
+      height="520"
+      color="0x111111EE"
+      translation="[190,90]"
+      visible="false" />
+
+    <Label
+      id="configTitle"
+      translation="[230,120]"
+      width="820"
+      height="40"
+      font="font:MediumBoldSystemFont"
+      color="0xFFFFFFFF"
+      visible="false"
+      text="VTX Roku HUD Settings" />
+
+    <Label
+      id="configHelp"
+      translation="[230,170]"
+      width="820"
+      height="55"
+      font="font:SmallSystemFont"
+      color="0xDDDDDDFF"
+      visible="false"
+      text="Enter your HUD server URL. Example: http://192.168.1.50:8080" />
+
+    <Keyboard
+      id="serverKeyboard"
+      translation="[230,235]"
+      visible="false" />
+
+    <Label
+      id="configFooter"
+      translation="[230,560]"
+      width="820"
+      height="35"
+      font="font:SmallSystemFont"
+      color="0xFFFFFFFF"
+      visible="false"
+      text="OK = Save/Test   Back or * = Close" />
+
+    <Timer id="rotateTimer" repeat="true" duration="15" />
+    <FetchPagesTask id="fetchPagesTask" />
+  </children>
+</component>
