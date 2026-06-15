@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="FetchPagesTask" extends="Task">
+  <interface>
+    <field id="serverUrl" type="string" />
+    <field id="pagesPath" type="string" />
+    <field id="result" type="assocarray" />
+    <field id="error" type="string" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/components/FetchPagesTask.brs" />
+</component>
